@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     list_callin.add(map);
                 }
                 else if(type == CallLog.Calls.OUTGOING_TYPE){
+                    typeString = "呼出";
                     map.put("name", (name == null) ? "未备注联系人" : name);
                     map.put("number", number);
                     map.put("date", date);
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     list_callout.add(map);
                 }
                 else {
+                    typeString = "未接";
                     map.put("name", (name == null) ? "未备注联系人" : name);
                     map.put("number", number);
                     map.put("date", date);
