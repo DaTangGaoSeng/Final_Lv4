@@ -1,18 +1,11 @@
 package com.example.myapplication;
 
-
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.os.Build;
 import android.view.LayoutInflater;
-
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 import androidx.annotation.NonNull;
-
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -21,6 +14,7 @@ import java.util.Map;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private List<Map<String, String>> list;
     private OnItemClickListener mOnItemClickListener;
+
     public void setOnItemClickListener(OnItemClickListener mOnItemClickListener) {
         this.mOnItemClickListener = mOnItemClickListener;
     }
